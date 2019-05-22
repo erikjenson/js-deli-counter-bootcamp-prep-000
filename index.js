@@ -16,10 +16,10 @@ function currentLine(line){
   if (line.length === 0) {
   return "The line is currently empty.";
   } else{
-     for (var i=0; i < line.length; i++){
-    var x= [`${i +1}. ${line[i]}`);
-//`The line is currently: x,`
+    var x = [];
+    for (var i=0; i < line.length; i++){
+    x= x.push(`${i +1}. ${line[i]},`);
      }
-     
+   return `The line is currently: ${x}`
   }
 }
