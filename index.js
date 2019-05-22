@@ -17,7 +17,7 @@ function currentLine(line){
   return "The line is currently empty.";
   } else{
      for (var i=0; i < line.length; i++){
-      return `The line is currently: ${i+1}. {line[i]},`
+      return `The line is currently: ${i+1}. ${line[i]},`
      }
      
      make a loop that cycles through the array listing an index +1 and then the name until for all in line.
